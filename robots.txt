@@ -1,0 +1,40 @@
+# SAMPLE SITE — robots.txt intentionally allows general and AI crawlers
+# to demonstrate "AI-crawler-open" best practice. Fictional brand, no real
+# company or data is involved.
+
+User-agent: *
+Allow: /
+
+# Explicitly allow common AI/LLM crawlers (redundant with the wildcard
+# above, but listed explicitly since some crawlers only honor a named rule).
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://example.github.io/agentic-commerce/sitemap.xml

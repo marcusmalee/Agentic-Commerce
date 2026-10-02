@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Northlane Advisory — Agentic Commerce Sample API",
+    "description": "SAMPLE / ILLUSTRATIVE SPEC ONLY. Fictional brand, not a real company. Describes a hypothetical read-only endpoint an AI agent could call to retrieve this site's readiness framework as structured JSON, instead of parsing HTML.",
+    "version": "0.1.0-sample",
+    "contact": {
+      "name": "Sample contact (not real)",
+      "url": "https://example.github.io/agentic-commerce/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://example.github.io/agentic-commerce",
+      "description": "Static sample site (no live API is actually deployed)"
+    }
+  ],
+  "paths": {
+    "/api/readiness-framework": {
+      "get": {
+        "summary": "Get the agentic-commerce readiness framework",
+        "description": "SAMPLE ENDPOINT (not implemented). Would return the four readiness traits (discoverable, trustworthy, structured, transactable) and six illustrative service areas as structured JSON.",
+        "operationId": "getReadinessFramework",
+        "responses": {
+          "200": {
+            "description": "Readiness framework",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "traits": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "example": ["Discoverable", "Trustworthy", "Structured", "Transactable"]
+                    },
+                    "services": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": { "type": "string", "example": "01" },
+                          "name": { "type": "string", "example": "Strategy and readiness" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/faq": {
+      "get": {
+        "summary": "Get FAQ entries",
+        "description": "SAMPLE ENDPOINT (not implemented). Would return the same question/answer pairs published in the FAQPage JSON-LD and docs/faq.md.",
+        "operationId": "getFaq",
+        "responses": {
+          "200": {
+            "description": "FAQ entries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "question": { "type": "string" },
+                      "answer": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

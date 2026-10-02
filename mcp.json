@@ -1,0 +1,57 @@
+{
+  "$comment": "SAMPLE / ILLUSTRATIVE MANIFEST ONLY. 'Northlane Advisory' is a fictional brand. This file demonstrates the shape of an MCP-style resource/tool manifest for agent-readable site design; it is not a live, deployed MCP server.",
+  "name": "northlane-advisory-agentic-commerce-sample",
+  "version": "0.1.0-sample",
+  "description": "Illustrative manifest describing resources and tools an AI agent could use to read and query this sample site.",
+  "resources": [
+    {
+      "uri": "https://example.github.io/agentic-commerce/llms.txt",
+      "name": "site_index",
+      "description": "Curated index of key pages and topics for AI agents.",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "https://example.github.io/agentic-commerce/docs/overview.md",
+      "name": "overview",
+      "description": "Markdown-native overview of agentic commerce and this sample site's illustrative services.",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "https://example.github.io/agentic-commerce/docs/faq.md",
+      "name": "faq",
+      "description": "Markdown-native FAQ, mirrors the FAQPage JSON-LD on the homepage.",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "https://example.github.io/agentic-commerce/docs/services.md",
+      "name": "services",
+      "description": "Flat table of illustrative service areas and target audiences.",
+      "mimeType": "text/markdown"
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_readiness_overview",
+      "description": "SAMPLE TOOL (not implemented). Would return a structured summary of the six readiness dimensions described on this site: discoverable, trustworthy, structured, transactable, plus the six illustrative service areas.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "list_faq",
+      "description": "SAMPLE TOOL (not implemented). Would return the FAQ entries from docs/faq.md as structured question/answer pairs.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  ],
+  "notes": [
+    "No tool in this manifest executes any real action or returns live data.",
+    "This file exists to demonstrate what an agent tooling manifest looks like, for a scorecard/demo exercise.",
+    "Before any real deployment, replace fictional brand references and implement an actual MCP server or API."
+  ]
+}

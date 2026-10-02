@@ -1,0 +1,47 @@
+# Northlane Advisory — Agentic Commerce (Sample Site)
+
+> SAMPLE / DEMO CONTENT. "Northlane Advisory" is a fictional brand created
+> solely to illustrate agent-readable website design. It does not represent
+> a real company, and no services are actually offered.
+
+This site demonstrates how a business could make its web presence more
+discoverable, interpretable and actionable by AI agents (LLM-based search,
+shopping, and research assistants).
+
+## Main content
+
+- [Homepage: Agentic commerce overview](/index.html): What agentic commerce
+  is, why it matters, and how a business could prepare for it.
+- [Markdown overview](/docs/overview.md): Markdown-native version of the
+  homepage content, optimized for LLM ingestion.
+- [Markdown FAQ](/docs/faq.md): Standalone FAQ in Markdown, mirrors the
+  FAQPage structured data on the homepage.
+- [Markdown services summary](/docs/services.md): The six illustrative
+  service areas in a flat, list-based format.
+
+## Agent tooling
+
+- [MCP-style manifest](/.well-known/mcp.json): Illustrative Model Context
+  Protocol-style resource/tool manifest for this site.
+- [OpenAPI description](/openapi.json): Illustrative OpenAPI 3.0 spec for a
+  sample "readiness check" endpoint.
+
+## Core topics covered
+
+- Agentic commerce strategy
+- Agent discoverability
+- Machine-readable product and service data
+- Agent identity and delegated authority
+- Verifiable intent
+- Agentic payments and transaction controls
+- Cybersecurity and responsible AI governance
+
+## Policies
+
+- This site intentionally allows AI and LLM crawlers (see /robots.txt).
+- All content on this site is illustrative/sample content. Do not cite it as
+  evidence of a real company, service, or offer.
+
+## Contact
+
+This is a fictional demo brand; no real contact channel exists.
